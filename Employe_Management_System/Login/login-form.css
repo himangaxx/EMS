@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #181a1e;
+  font-family: sans-serif;
+}
+.loginBox {
+  position: absolute;
+  padding: 20px 30px;
+  top: 50%;
+  left: 50%;
+  float: left;
+  transform: translate(-50%, -50%);
+  width: 40vw;
+  height: 50vh;
+  box-sizing: border-box;
+  background: #202528;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+.user {
+  margin: 0;
+  padding: 0 0 0 80px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+h3 {
+  margin-top: 0;
+  padding: 0 0 20px;
+  color: #ffffff;
+  text-align: center;
+}
+.loginBox input {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.loginBox input[type="email"],
+.loginBox input[type="password"] {
+  border: none;
+  border-bottom: 2px solid #262626;
+  outline: none;
+  height: 40px;
+  color: #262626;
+  font-size: 16px;
+  padding-left: 30px;
+  border-radius: 7px;
+  box-sizing: border-box;
+}
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.inputBox {
+  position: relative;
+}
+.inputBox span {
+  padding-left: 5px;
+  position: absolute;
+  top: 10px;
+  color: #262626;
+}
+.loginBox input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  font-size: 16px;
+  background: linear-gradient(to right, #d78a03, #ffa200, #d78a03);
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.loginBox input[type="submit"]:hover {
+  animation: pulse 1s;
+  background: linear-gradient(to right, #fbbc4e, #ffa200, #fbbc4e);
+}
+
+.loginBox a {
+  color: #a6a6a6;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+.loginBox h5 {
+  margin: 0;
+  padding: 15px 0 0 0;
+  text-align: center;
+  color: #262626;
+}
+.loginBox h4 {
+  margin: 0;
+  padding: 20px 0 0 0;
+  text-align: center;
+  color: #262626;
+}
+.loginBox h4 a {
+  text-decoration: none;
+  color: blue;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 988px) {
+  .loginBox {
+    width: 350px;
+    height: 550px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .loginBox {
+    width: 350px;
+    height: 550px;
+    right: 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .loginBox {
+    width: 320px;
+    height: 550px;
+    right: 10px;
+  }
+}
